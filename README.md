@@ -1,5 +1,7 @@
 ## Node.js Application for CI Training
 
+[![CI Workflows](https://github.com/joelvkuos/ci-training/actions/workflows/ci.yml/badge.svg)](https://github.com/joelvkuos/ci-training/actions/workflows/ci.yml)
+
 This repository is training on creating a CI pipeline using GitHub Actions.
 
 ### Instructions
