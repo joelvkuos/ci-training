@@ -38,6 +38,11 @@ jobs:
       - name: Build application
         run: npm run build
 
+  Render_deployment:
+    runs-on: ubuntu-latest
+    needs: Node-CI-Pipeline
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
       - name: Render deployment
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
